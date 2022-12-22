@@ -29,3 +29,54 @@ sudo systemctl status mongodb
 
 Install npm – Node package manager.
 sudo apt install -y npm
+
+**Start The server**
+sudo service mongodb start
+![image](https://user-images.githubusercontent.com/113097621/209156390-583994d3-772c-49dc-bbcc-b4799204a699.png)
+
+**Create a folder named ‘Books’**
+![image](https://user-images.githubusercontent.com/113097621/209156571-395e0f0a-5aed-4e5b-9d4f-095f6154714e.png)
+
+**In the Books directory, Initialize npm project**
+npm init
+![image](https://user-images.githubusercontent.com/113097621/209157519-f6b3da95-527e-488d-803e-a08e72d81d5d.png)
+![image](https://user-images.githubusercontent.com/113097621/209157816-91a3ef2d-c1e1-4e48-9b41-7ca152cf9e38.png)
+
+
+**Add a file to it named server.js**
+vi server.js
+![image](https://user-images.githubusercontent.com/113097621/209158149-b2dafb70-bb6a-412a-bb7c-55e643a59cd7.png)
+
+
+**Install Express and set up routes to the server**
+![image](https://user-images.githubusercontent.com/113097621/209158436-9de53c35-70c4-499b-ad47-af29a732b8b0.png)
+
+**In ‘Books’ folder, create a folder named apps**
+![image](https://user-images.githubusercontent.com/113097621/209158708-7c654a2a-9939-410e-9289-a3e605acd50f.png)
+
+**Create a file named routes.js**
+vi routes.js
+
+
+**In the ‘apps’ folder, create a folder named models**
+mkdir models && cd models
+![image](https://user-images.githubusercontent.com/113097621/209159383-0abba408-28fb-445a-867b-7ce9db94b167.png)
+
+**Create a file named book.js**
+vi book.js
+
+**Step 4 – Access the routes with AngularJS**
+
+**Create a folder named public**
+![image](https://user-images.githubusercontent.com/113097621/209160011-94e8fe2b-ca48-4323-907d-c0978dd63def.png)
+
+vi script.js
+
+
+**Start the server by running this command:**
+node server.js
+
+**The server is now up and running, we can connect it via port 3300. You can launch a separate Putty or SSH console to test what curl command returns locally.**
+![image](https://user-images.githubusercontent.com/113097621/209161048-ce2b721f-9e8f-40dd-8fff-09b8711a71cc.png)
+
+
